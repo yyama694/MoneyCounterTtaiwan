@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">錢計數器(台灣)</string>
+    <string name="action_settings">環境</string>
+    <string name="gen2000"><u>2,000 元 </u></string>
+    <string name="gen1000"><u>1,000 元 </u></string>
+    <string name="gen500"><u>500 元 </u></string>
+    <string name="gen200"><u>200 元 </u></string>
+    <string name="gen100"><u>100 元 </u></string>
+    <string name="gen50"><u>50 元 </u></string>
+    <string name="gen20"><u>20 元 </u></string>
+    <string name="gen10"><u>10 元 </u></string>
+    <string name="gen5"><u>5 元 </u></string>
+    <string name="gen1"><u>1 元 </u></string>
+    <string name="kaku5"><u>5 角 </u></string>
+    <string name="screenshot">屏幕截圖</string>
+    <string name="openFlder">Open the screen shot folder</string>
+    <string name="save">保存</string>
+    <string name="open">開放</string>
+    <string name="select_file">請選擇該文件</string>
+    <string name="saveFile">文件保存</string>
+    <string name="selectFile">文件列表</string>
+    <string name="has_been_saved">保存該文件已經完成</string>
+    <string name="failed_to_save">我沒能保存文件</string>
+    <string name="delete">刪除</string>
+    <string name="cancel">cancel</string>
+    <string name="file">文件</string>
+    <string name="delete_confirmation">您確定要刪除嗎？</string>
+    <string name="opend_file">完成了能夠打開文件</string>
+    <string name="file_open_error">我無法打開該文件</string>
+    <string name="please_memo">請輸入註釋（可選）</string>
+    <string name="del">刪除</string>
+    <string name="kind">類型</string>
+    <string name="num">號碼</string>
+    <string name="sub_total">小計</string>
+    <string name="all_clear">全清</string>
+    <string name="total">合計</string>
+    <string name="space"></string>
+    <string name="all_crear_confirm_title">刪除確認</string>
+    <string name="all_crear_confirm_msg">好？</string>
+    <string name="saved_screenshot">截圖保存完成</string>
+    <string name="destination">Destination</string>
+</resources>
