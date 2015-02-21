@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Money Counter Taiwan(TWD)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="gen2000"><u>2,000 元 </u></string>
+    <string name="gen1000"><u>1,000 元 </u></string>
+    <string name="gen500"><u>500 元 </u></string>
+    <string name="gen200"><u>200 元 </u></string>
+    <string name="gen100"><u>100 元 </u></string>
+    <string name="gen50"><u>50 元 </u></string>
+    <string name="gen20"><u>20 元 </u></string>
+    <string name="gen10"><u>10 元 </u></string>
+    <string name="gen5"><u>5 元 </u></string>
+    <string name="gen1"><u>1 元 </u></string>
+    <string name="kaku5"><u>5 角 </u></string>
+    <string name="dol100"><u>＄ 100 </u></string>
+    <string name="dol50"><u>＄  50 </u></string>
+    <string name="dol20"><u>＄  20 </u></string>
+    <string name="dol10"><u>＄  10 </u></string>
+    <string name="dol5"><u>＄   5 </u></string>
+    <string name="dol2"><u>＄   2 </u></string>
+    <string name="dol1"><u>＄   1 </u></string>
+    <string name="cent100"><u>￠ 100 </u></string>
+    <string name="cent50"><u>￠  50 </u></string>
+    <string name="cent25"><u>￠  25 </u></string>
+    <string name="cent10"><u>￠  10 </u></string>
+    <string name="cent5"><u>￠   5 </u></string>
+    <string name="cent1"><u>￠   1 </u></string>
+    <string name="screenshot">Screen shot</string>
+    <string name="openFlder">Open the screen shot folder</string>
+    <string name="save">Save</string>
+    <string name="open">Open</string>
+    <string name="select_file">Please select the file.</string>
+    <string name="saveFile">File save</string>
+    <string name="selectFile">File list</string>
+    <string name="has_been_saved">Has been saved.</string>
+    <string name="failed_to_save">Failed to save.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="file">File</string>
+    <string name="delete_confirmation">Sure you want to delete?</string>
+    <string name="opend_file">Opened the file.</string>
+    <string name="file_open_error">File open error</string>
+    <string name="please_memo">Please enter the memo. (Optional)</string>
+    <string name="del">Delete</string>
+    <string name="kind">Kind</string>
+    <string name="num">Num</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="all_clear">Clear</string>
+    <string name="total">Total</string>
+    <string name="space"></string>
+    <string name="all_crear_confirm_title">Initialize confirmation</string>
+    <string name="all_crear_confirm_msg">Are you sure you want to clear all?</string>
+    <string name="saved_screenshot">saved the screen shot.</string>
+    <string name="destination">Destination</string>
+
+</resources>
