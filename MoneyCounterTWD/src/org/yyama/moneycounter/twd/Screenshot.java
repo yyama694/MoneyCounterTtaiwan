@@ -130,9 +130,10 @@ public class Screenshot {
 		cvsRbn.drawPath(path, paint);
 		cvsBase.drawBitmap(ribbon, 0, 0, null);
 
-		String text1 = "”“úŠú˜aŠÔ";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy”NMMŒdd“ú@HH:mm:ss");
-		String text2 = sdf.format(Calendar.getInstance().getTime());
+		String text1 = "Shooting date and time";
+		String text2 = String.format(Locale.ENGLISH,
+				"    %1$tb. %1$td,%1$tY %1$tH:%1$tM:%1$tS",
+				Calendar.getInstance());
 		Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 		textPaint.setTextSize(55);
 		textPaint.setColor(0x90000080);

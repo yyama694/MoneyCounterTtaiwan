@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">錢計數器(台灣)</string>
-    <string name="action_settings">環境</string>
+    <string name="app_name">Money Counter Taiwan(TWD)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
     <string name="gen2000"><u>2,000 元 </u></string>
     <string name="gen1000"><u>1,000 元 </u></string>
     <string name="gen500"><u>500 元 </u></string>
@@ -14,31 +15,32 @@
     <string name="gen5"><u>5 元 </u></string>
     <string name="gen1"><u>1 元 </u></string>
     <string name="kaku5"><u>5 角 </u></string>
-    <string name="screenshot">屏幕截圖</string>
+    <string name="screenshot">Screen shot</string>
     <string name="openFlder">Open the screen shot folder</string>
-    <string name="save">保存</string>
-    <string name="open">開放</string>
-    <string name="select_file">請選擇該文件</string>
-    <string name="saveFile">文件保存</string>
-    <string name="selectFile">文件列表</string>
-    <string name="has_been_saved">保存該文件已經完成</string>
-    <string name="failed_to_save">我沒能保存文件</string>
-    <string name="delete">刪除</string>
-    <string name="cancel">cancel</string>
-    <string name="file">文件</string>
-    <string name="delete_confirmation">您確定要刪除嗎？</string>
-    <string name="opend_file">完成了能夠打開文件</string>
-    <string name="file_open_error">我無法打開該文件</string>
-    <string name="please_memo">請輸入註釋（可選）</string>
-    <string name="del">刪除</string>
-    <string name="kind">類型</string>
-    <string name="num">號碼</string>
-    <string name="sub_total">小計</string>
-    <string name="all_clear">全清</string>
-    <string name="total">合計</string>
+    <string name="save">Save</string>
+    <string name="open">Open</string>
+    <string name="select_file">Please select the file.</string>
+    <string name="saveFile">File save</string>
+    <string name="selectFile">File list</string>
+    <string name="has_been_saved">Has been saved.</string>
+    <string name="failed_to_save">Failed to save.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="file">File</string>
+    <string name="delete_confirmation">Sure you want to delete?</string>
+    <string name="opend_file">Opened the file.</string>
+    <string name="file_open_error">File open error</string>
+    <string name="please_memo">Please enter the memo. (Optional)</string>
+    <string name="del">Delete</string>
+    <string name="kind">Kind</string>
+    <string name="num">Num</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="all_clear">Clear</string>
+    <string name="total">Total</string>
     <string name="space"></string>
-    <string name="all_crear_confirm_title">刪除確認</string>
-    <string name="all_crear_confirm_msg">好？</string>
-    <string name="saved_screenshot">截圖保存完成</string>
+    <string name="all_crear_confirm_title">Initialize confirmation</string>
+    <string name="all_crear_confirm_msg">Are you sure you want to clear all?</string>
+    <string name="saved_screenshot">saved the screen shot.</string>
     <string name="destination">Destination</string>
+
 </resources>
