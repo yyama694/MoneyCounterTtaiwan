@@ -1,12 +1,17 @@
 package org.yyama.moneycounter.twd;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -59,9 +64,27 @@ public class LocalFileActivity extends Activity implements OnClickListener {
 			if (s.equals(MainActivity.FILE_NAME)) {
 				continue;
 			}
-			fileTitle = " " + s.substring(3, 7) + "/" + s.substring(7, 9) + "/"
-					+ s.substring(9, 11) + " " + s.substring(12, 14) + ":"
-					+ s.substring(14, 16) + ":" + s.substring(16, 18) + " ";
+			if (s.equals(MainActivity.FILE_NAME)) {
+				continue;
+			}
+			if (!s.substring(0, 3).equals("MC_")) {
+				continue;
+			}
+			SimpleDateFormat outSd = new SimpleDateFormat("dd-MMM-yyyy",
+					Locale.ENGLISH);
+			SimpleDateFormat inSd = new SimpleDateFormat("yyyy/MM/dd",
+					Locale.ENGLISH);
+			Date date = null;
+			try {
+				date = inSd.parse(s.substring(3, 7) + "/" + s.substring(7, 9)
+						+ "/" + s.substring(9, 11));
+			} catch (ParseException e) {
+				Log.d("yyama", "日付変換エラーです。");
+				e.printStackTrace();
+			}
+			fileTitle = " " + outSd.format(date) + " " + s.substring(12, 14)
+					+ ":" + s.substring(14, 16) + ":" + s.substring(16, 18)
+					+ " ";
 			if (s.length() >= 23) {
 				fileTitle += s.substring(19, s.length() - 4);
 			}
