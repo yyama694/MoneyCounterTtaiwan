@@ -23,6 +23,7 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.LightingColorFilter;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Gravity;
@@ -53,7 +54,7 @@ import com.google.android.gms.ads.InterstitialAd;
 /*
  * 
  */
-public class MainActivity extends Activity implements OnClickListener,
+public class MainActivity extends AppCompatActivity implements OnClickListener,
 		OnTouchListener {
 	int[] kakuValue = { 5, 10, 50, 100, 200, 500, 1000, 2000, 5000, 10000,
 			20000 };
@@ -238,8 +239,9 @@ public class MainActivity extends Activity implements OnClickListener,
 		layout.addView(adView);
 
 		// 一般的なリクエストを行う
-		AdRequest adRequest = new AdRequest.Builder().addTestDevice(
-				"F3B1B2779DEF816F9B31AA6C6DC57C3F").build();
+		AdRequest adRequest = new AdRequest.Builder()
+				.addTestDevice("F3B1B2779DEF816F9B31AA6C6DC57C3F")
+				.addTestDevice("BED46C75F1EDD70734B8670057F9B714").build();
 		// AdRequest adRequest = new AdRequest.Builder().build();
 
 		// 広告リクエストを行って adView を読み込む
@@ -269,11 +271,12 @@ public class MainActivity extends Activity implements OnClickListener,
 		if (!interstitial.isLoaded()) {
 			Log.d("yyama", "未ロードのため、リクエストします。");
 			// 広告リクエストを作成する。
-			AdRequest adRequest = new AdRequest.Builder().addTestDevice(
-					"F3B1B2779DEF816F9B31AA6C6DC57C3F").build();
+			AdRequest adRequest = new AdRequest.Builder()
+					.addTestDevice("F3B1B2779DEF816F9B31AA6C6DC57C3F")
+					.addTestDevice("BED46C75F1EDD70734B8670057F9B714").build();
 			// インタースティシャルの読み込みを開始する。
 			interstitial.loadAd(adRequest);
-		} 
+		}
 	}
 
 	private void draw() {
@@ -316,7 +319,7 @@ public class MainActivity extends Activity implements OnClickListener,
 			// 追記する
 			for (int i = 0; i < kakuValue.length; i++) {
 				writer.append(kakuValue[i] + "," + data.get(kakuValue[i])
-						+ System.lineSeparator());
+						+ System.getProperty("line.separator"));
 			}
 			writer.close();
 		} catch (IOException e) {
@@ -514,7 +517,7 @@ public class MainActivity extends Activity implements OnClickListener,
 							// 追記する
 							for (int i : kakuValue) {
 								pw.append(i + "," + data.get(i)
-										+ System.lineSeparator());
+										+ System.getProperty("line.separator"));
 							}
 							pw.flush();
 							Toast.makeText(MainActivity.this,
@@ -580,7 +583,7 @@ public class MainActivity extends Activity implements OnClickListener,
 					Toast.makeText(
 							this,
 							getString(R.string.opend_file)
-									+ System.lineSeparator()
+									+ System.getProperty("line.separator")
 									+ data.getStringExtra("file_title"),
 							Toast.LENGTH_LONG).show();
 				} catch (Exception e) {

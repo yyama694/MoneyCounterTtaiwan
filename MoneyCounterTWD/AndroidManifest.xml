@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.yyama.moneycounter.twd"
-    android:versionCode="3"
-    android:versionName="1.0.3" >
+    android:versionCode="4"
+    android:versionName="1.0.4" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
+            android:theme="@style/MyTheme"
             android:name="org.yyama.moneycounter.twd.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>

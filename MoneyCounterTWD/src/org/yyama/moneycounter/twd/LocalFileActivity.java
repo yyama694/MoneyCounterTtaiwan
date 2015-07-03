@@ -49,8 +49,9 @@ public class LocalFileActivity extends Activity implements OnClickListener {
 		// AdRequest.Builder().build();
 		LinearLayout ll = (LinearLayout) findViewById(R.id.linear_layout3);
 		ll.addView(mAdView);
-		AdRequest adRequest = new AdRequest.Builder().addTestDevice(
-				"F3B1B2779DEF816F9B31AA6C6DC57C3F").build();
+		AdRequest adRequest = new AdRequest.Builder()
+				.addTestDevice("F3B1B2779DEF816F9B31AA6C6DC57C3F")
+				.addTestDevice("BED46C75F1EDD70734B8670057F9B714").build();
 		mAdView.loadAd(adRequest);
 	}
 
